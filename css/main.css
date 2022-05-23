@@ -480,7 +480,7 @@ img {
 .features__icon {
   width: 100%;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
   display: inline-flex;
@@ -497,7 +497,6 @@ img {
 .features__descr {
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: var(--primary-txt-mode-light);
 }
@@ -1129,9 +1128,6 @@ img {
 @media screen and (min-width: 480px) {
   .paganation__item:nth-last-child(-n + 2) {
     margin-bottom: 0;
-  }
-  .paganation__item:nth-last-child(3n) {
-    margin-right: 0;
   }
 }
 

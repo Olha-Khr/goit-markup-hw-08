@@ -25,9 +25,9 @@
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
-    &:nth-last-child(3n) {
-      margin-right: 0;
-    }
+    // &:nth-last-child(3n) {
+    //   // margin-right: 0;
+    // }
   }
 }
 
