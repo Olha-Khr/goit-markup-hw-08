@@ -1,4 +1,4 @@
-.pagination {
+.cards {
   display: flex;
   @media screen and (max-width: 767.98px) {
     flex-wrap: wrap;
@@ -15,7 +15,7 @@
   }
 }
 
-.paganation__item {
+.cards__item {
   margin-right: 8px;
   margin-bottom: 15px;
   &:last-child {
@@ -31,17 +31,15 @@
   }
 }
 
-.pagination__btn {
+.cards__btn {
   padding-left: 22px;
   padding-top: 6px;
   padding-right: 22px;
   padding-bottom: 6px;
 
   border: transparent;
+  @include font(500, 16px, 1.62, 0.03em);
   border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -49,13 +47,12 @@
   background-color: #f5f4fa;
   cursor: pointer;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--cubic-bezier), background-color var(--cubic-bezier),
+    box-shadow var(--cubic-bezier);
   &:hover,
   &:focus {
     color: var(--main-txt-mode-dark);
-    background-color: var(--bg-button);
+    background-color: var(--button);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }

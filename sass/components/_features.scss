@@ -75,19 +75,16 @@
   border-radius: 4px;
 
   margin-bottom: 30px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
+  @include center-flex(inline-flex, center, center);
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
 }
 
 .features__descr {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
+  //   font-size: 14px;
+  //   line-height: 1.71;
+  //   letter-spacing: 0.03em;
+  @include font(14px, 1.71, 0.03em);
   color: var(--primary-txt-mode-light);
 }

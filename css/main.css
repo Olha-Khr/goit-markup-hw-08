@@ -1,18 +1,19 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
-  --bg-header:#FFFFFF;
+  --header: #ffffff;
   --main-txt-mode-light: #212121;
   --primary-txt-mode-light: #757575;
-  --secondary-txt-mode-light: #2196F3;
-  --bg-mode-dark:#2F303A;
-  --bg-button: #2196F3;
-  --main-txt-mode-dark:#FFFFFF;
-  --primary-txt-mode-dark:rgba(255, 255, 255, 0.6);
-  --secondary-txt-mode-dark: #2196F3;
-  --icon-main-color:#AFB1B8;
-  --icon-hover-color: #FFFFFF;
-  --bg-icon-hover-color:#2196F3;
+  --secondary-txt-mode-light: #2196f3;
+  --mode-dark: #2f303a;
+  --button: #2196f3;
+  --main-txt-mode-dark: #ffffff;
+  --primary-txt-mode-dark: rgba(255, 255, 255, 0.6);
+  --secondary-txt-mode-dark: #2196f3;
+  --icon-main-color: #afb1b8;
+  --icon-hover-color: #ffffff;
+  --bg-icon-hover-color: #2196f3;
+  --cubic-bezier: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -97,7 +98,7 @@ img {
 
 .header {
   background-color: var(--bg-header);
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (max-width: 767px) {
@@ -159,7 +160,7 @@ img {
     justify-content: center;
     padding: 32px 0;
     font-size: 14px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--cubic-bezier);
   }
   .header__link:hover, .header__link:focus {
     color: var(--secondary-txt-mode-light);
@@ -495,8 +496,9 @@ img {
 }
 
 .features__descr {
-  font-size: 14px;
-  line-height: 1.71;
+  font-weight: 14px;
+  font-size: 1.71;
+  line-height: 0.03em;
   letter-spacing: 0.03em;
   color: var(--primary-txt-mode-light);
 }
@@ -516,8 +518,8 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-txt-mode-light);
 }
 
@@ -552,16 +554,16 @@ img {
   width: 100%;
   height: 70px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: var(--main-txt-mode-dark);
   background-color: rgba(47, 48, 58, 0.8);
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .team {
@@ -725,11 +727,11 @@ img {
 }
 
 .clients__title {
-  font-size: 28px;
   font-weight: 700;
+  font-size: 28px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-txt-mode-light);
 }
 
@@ -785,16 +787,16 @@ img {
 }
 
 .clients__link {
-  display: flex;
   width: 100%;
   height: 100%;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   border: 1px solid var(--icon-main-color);
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--icon-main-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--cubic-bezier), border-color var(--cubic-bezier);
 }
 
 .clients__link:hover, .clients__link:focus {
@@ -803,7 +805,7 @@ img {
 }
 
 .footer {
-  background-color: var(--bg-mode-dark);
+  background-color: var(--mode-dark);
 }
 
 @media screen and (min-width: 480px) {
@@ -822,8 +824,8 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
-    align-items: baseline;
     justify-content: center;
+    align-items: baseline;
   }
 }
 
@@ -881,7 +883,6 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--main-txt-mode-light);
   display: block;
@@ -928,17 +929,17 @@ img {
 }
 
 .adress__list {
-  line-height: 1.17;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 @media screen and (min-width: 1200px) {
   .adress__list {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
+    flex-direction: column;
   }
 }
 
@@ -953,7 +954,7 @@ img {
 
 .adress__map {
   color: var(--main-txt-mode-dark);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--cubic-bezier);
 }
 
 .adress__map:hover, .adress__map:focus {
@@ -963,7 +964,7 @@ img {
 .adress__mail,
 .adress__phone {
   color: var(--primary-txt-mode-dark);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--cubic-bezier);
 }
 
 .adress__mail:hover, .adress__mail:focus,
@@ -1090,12 +1091,12 @@ img {
   margin-left: 10px;
 }
 
-.pagination {
+.cards {
   display: flex;
 }
 
 @media screen and (max-width: 767.98px) {
-  .pagination {
+  .cards {
     flex-wrap: wrap;
     margin-bottom: 40px;
     justify-content: flex-start;
@@ -1103,55 +1104,56 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .pagination {
+  .cards {
     margin-bottom: 30px;
     justify-content: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .pagination {
+  .cards {
     justify-content: center;
     margin-bottom: 50px;
   }
 }
 
-.paganation__item {
+.cards__item {
   margin-right: 8px;
   margin-bottom: 15px;
 }
 
-.paganation__item:last-child {
+.cards__item:last-child {
   margin-right: 0;
 }
 
 @media screen and (min-width: 480px) {
-  .paganation__item:nth-last-child(-n + 2) {
+  .cards__item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
 }
 
-.pagination__btn {
+.cards__btn {
   padding-left: 22px;
   padding-top: 6px;
   padding-right: 22px;
   padding-bottom: 6px;
   border: transparent;
-  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-mode-light);
   background-color: #f5f4fa;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--cubic-bezier), background-color var(--cubic-bezier), box-shadow var(--cubic-bezier);
 }
 
-.pagination__btn:hover, .pagination__btn:focus {
+.cards__btn:hover, .cards__btn:focus {
   color: var(--main-txt-mode-dark);
-  background-color: var(--bg-button);
+  background-color: var(--button);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 

@@ -1,24 +1,20 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
 
-:root{
-    --main-font: "Roboto", sans-serif;
---secondary-font: "Raleway", sans-serif;
+  --header: #ffffff;
+  --main-txt-mode-light: #212121;
+  --primary-txt-mode-light: #757575;
+  --secondary-txt-mode-light: #2196f3;
 
+  --mode-dark: #2f303a;
+  --button: #2196f3;
+  --main-txt-mode-dark: #ffffff;
+  --primary-txt-mode-dark: rgba(255, 255, 255, 0.6);
+  --secondary-txt-mode-dark: #2196f3;
 
---bg-header:#FFFFFF;
---main-txt-mode-light: #212121;
---primary-txt-mode-light: #757575;
---secondary-txt-mode-light: #2196F3;
-
-
---bg-mode-dark:#2F303A;
---bg-button: #2196F3;
---main-txt-mode-dark:#FFFFFF;
---primary-txt-mode-dark:rgba(255, 255, 255, 0.6);
---secondary-txt-mode-dark: #2196F3;
-
---icon-main-color:#AFB1B8;
---icon-hover-color: #FFFFFF;
---bg-icon-hover-color:#2196F3;
-
+  --icon-main-color: #afb1b8;
+  --icon-hover-color: #ffffff;
+  --bg-icon-hover-color: #2196f3;
+  --cubic-bezier: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
