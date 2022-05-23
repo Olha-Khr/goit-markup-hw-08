@@ -978,22 +978,22 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .join {
+  .invites {
     align-items: center;
     margin-bottom: 60px;
   }
-  .join:last-child {
+  .invites:last-child {
     margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .join__networks {
+  .invites__networks {
     margin-right: 93px;
   }
 }
 
-.join__title {
+.invites__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1004,12 +1004,12 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .join__title {
+  .invites__title {
     text-align: center;
   }
 }
 
-.join__container {
+.invites__container {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -1017,13 +1017,13 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .join__container {
+  .invites__container {
     display: flex;
     margin: 0;
   }
 }
 
-.join__email {
+.invites__email {
   width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1039,27 +1039,27 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .join__email {
+  .invites__email {
     width: 100%;
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .join__email {
+  .invites__email {
     margin: 0 0 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .join__email {
+  .invites__email {
     margin-bottom: 0;
     margin-right: 12px;
     width: 358px;
   }
 }
 
-.join__button {
+.invites__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1078,19 +1078,19 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .join__button {
+  .invites__button {
     margin: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .join__button {
+  .invites__button {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.join__icon {
+.invites__icon {
   fill: white;
   margin-left: 10px;
 }
