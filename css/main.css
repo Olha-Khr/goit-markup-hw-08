@@ -1343,7 +1343,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opasity var(--cubic-bezier);
   overflow-y: scroll;
 }
 
@@ -1369,7 +1369,7 @@ img {
 }
 
 .modal {
-  background-color: #FFFFFF;
+  background-color: var(--main-txt-mode-dark);
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1392,7 +1392,7 @@ img {
     left: 50%;
     max-width: 528px;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms var(--cubic-bezier);
   }
 }
 
@@ -1407,7 +1407,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: white;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--cubic-bezier);
 }
 
 .modal__btn:hover, .modal__btn:focus {
@@ -1418,9 +1418,9 @@ img {
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
-  text-align: center;
+  line-height: 1.15;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
@@ -1449,7 +1449,7 @@ img {
   position: absolute;
   left: 14px;
   top: 32px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--cubic-bezier);
 }
 
 .form__input {
@@ -1460,7 +1460,7 @@ img {
   height: 40px;
   padding: 12px 42px;
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-colorvar(--cubic-bezier);
 }
 
 .form__input:focus {
@@ -1492,8 +1492,8 @@ img {
 
 .form__label--checkbox {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .form__input--checkbox {
@@ -1525,21 +1525,21 @@ img {
 
 .form__button {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   width: 200px;
   height: 50px;
   background-color: var(--bg-icon-hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.06em;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: center;
   color: white;
   cursor: pointer;
 }
