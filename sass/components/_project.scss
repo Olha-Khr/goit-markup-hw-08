@@ -73,7 +73,7 @@
   background-color: rgba(33, 150, 243, 0.9);
   bottom: 0px;
   transform: translateY(101%);
-  transition: transform 250ms var(--cubic-bezier);
+  transition: transform var(--cubic-bezier);
 }
 
 .project__link:hover .project__overlay,
