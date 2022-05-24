@@ -90,6 +90,12 @@
   margin-right: 9px;
   flex-shrink: 0;
 }
+.form__icon--te {
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .form__link {
   color: var(--bg-icon-hover-color);
