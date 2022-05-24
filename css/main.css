@@ -500,9 +500,8 @@ img {
 }
 
 .features__descr {
-  font-weight: 14px;
-  font-size: 1.71;
-  line-height: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-txt-mode-light);
 }
@@ -705,13 +704,17 @@ img {
   color: var(--icon-main-color);
   background-color: var(--main-txt-mode-dark);
   border-radius: 50%;
-  transition: color var(--cubic-bezier), background-color var(--cubic-bezier);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .networks__link:hover, .networks__link:focus {
   background-color: var(--bg-icon-hover-color);
   color: var(--main-txt-mode-dark);
   border-radius: 50%;
+}
+
+.networks__icon--dark__mode {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .networks__icon {
@@ -722,11 +725,7 @@ img {
   fill: var(--icon-hover-color);
 }
 
-.networks__icon--dark__mode {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.networks__icon-footer {
+.networks__icon--footer {
   fill: var(--icon-hover-color);
 }
 
@@ -932,7 +931,7 @@ img {
   }
 }
 
-.address__list {
+.adress__list {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
@@ -940,35 +939,35 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .address__list {
+  .adress__list {
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
-.address__item {
+.adress__item {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.address__item:last-child {
+.adress__item:last-child {
   margin-bottom: 0;
 }
 
-.address__map {
+.adress__map {
   color: var(--main-txt-mode-dark);
-  transition: color var(--cubic-bezier);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__map:hover, .address__map:focus {
+.adress__map:hover, .adress__map:focus {
   color: var(--secondary-txt-mode-dark);
 }
 
 .adress__mail,
 .adress__phone {
   color: var(--primary-txt-mode-dark);
-  transition: color var(--cubic-bezier);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress__mail:hover, .adress__mail:focus,
@@ -1074,6 +1073,10 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
   letter-spacing: 0.06em;
 }
 
@@ -1596,7 +1599,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: var(--bg-header);
+  background-color: var(--header);
   z-index: 5;
   opacity: 0;
   transform: translateX(100%);
