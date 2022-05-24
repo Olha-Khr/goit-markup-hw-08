@@ -85,7 +85,8 @@
 .menu__link {
   color: currentColor;
   &:hover,
-  &:focus {
+  &:focus,
+  &--activ {
     color: var(--secondary-txt-mode-light);
   }
 }

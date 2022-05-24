@@ -1647,7 +1647,7 @@ img {
   color: currentColor;
 }
 
-.menu__link:hover, .menu__link:focus {
+.menu__link:hover, .menu__link:focus, .menu__link--activ {
   color: var(--secondary-txt-mode-light);
 }
 
