@@ -1,0 +1,44 @@
+.styless {
+  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  &__title {
+    margin-bottom: 50px;
+    @include font(700, 36px, 1.16, 0.03em);
+    text-align: center;
+    color: var(--main-txt-mode-light);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__item {
+    margin-right: 30px;
+    position: relative;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__descriotion {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    @include center-flex;
+    color: var(--main-txt-mode-dark);
+    background-color: rgba(47, 48, 58, 0.8);
+    @include font(700, 14px, 1.14, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
