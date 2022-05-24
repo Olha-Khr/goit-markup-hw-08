@@ -18,6 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: var(--icon-main-color);
   color: var(--icon-main-color);
   background-color: var(--main-txt-mode-dark);
   border-radius: 50%;
@@ -27,19 +28,21 @@
   &:focus {
     background-color: var(--bg-icon-hover-color);
     color: var(--main-txt-mode-dark);
-    border-radius: 50%;
+    fill: var(--icon-hover-color);
+
+    // border-radius: 50%;
   }
 }
 .networks__icon--dark__mode {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.networks__icon {
-  fill: var(--icon-main-color);
-  &:hover,
-  &:focus {
-    fill: var(--icon-hover-color);
-  }
-}
+// .networks__icon {
+//   fill: var(--icon-main-color);
+//   &:hover {
+//     // &:focus
+//     fill: var(--icon-hover-color);
+//   }
+// }
 .networks__icon--footer {
   fill: var(--icon-hover-color);
 }

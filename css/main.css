@@ -700,6 +700,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: var(--icon-main-color);
   color: var(--icon-main-color);
   background-color: var(--main-txt-mode-dark);
   border-radius: 50%;
@@ -709,19 +710,11 @@ img {
 .networks__link:hover, .networks__link:focus {
   background-color: var(--bg-icon-hover-color);
   color: var(--main-txt-mode-dark);
-  border-radius: 50%;
+  fill: var(--icon-hover-color);
 }
 
 .networks__icon--dark__mode {
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.networks__icon {
-  fill: var(--icon-main-color);
-}
-
-.networks__icon:hover, .networks__icon:focus {
-  fill: var(--icon-hover-color);
 }
 
 .networks__icon--footer {
