@@ -26,7 +26,8 @@
   color: var(--main-txt-mode-light);
   transition: color var(--cubic-bezier);
   &:hover,
-  &:focus {
+  &:focus,
+  &--active {
     color: var(--secondary-txt-mode-light);
   }
 }

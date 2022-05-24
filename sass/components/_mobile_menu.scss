@@ -100,7 +100,7 @@
 }
 
 .contact__item:first-child {
-  @include font(500, 24px, 1.7, 0.02em);
+  @include font(500, 34px, 1.7, 0.02em);
   margin-bottom: 32px;
 
   color: var(--secondary-txt-mode-light);
