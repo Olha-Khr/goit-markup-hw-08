@@ -302,6 +302,7 @@ img {
 .hero {
   background-color: var(--mode-dark);
   text-align: center;
+  width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -1656,6 +1657,7 @@ img {
 
 .contact__list {
   margin-bottom: 64px;
+  margin-top: 282px;
 }
 
 .contact__item:first-child {
