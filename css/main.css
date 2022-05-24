@@ -302,7 +302,6 @@ img {
 .hero {
   background-color: var(--mode-dark);
   text-align: center;
-  width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -928,11 +927,11 @@ img {
 
 @media screen and (min-width: 1200px) {
   .address {
-    padding-left: 15px;
+    padding-left: 10px;
   }
 }
 
-.adress__list {
+.address__list {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
@@ -940,28 +939,28 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .adress__list {
+  .address__list {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
-.adress__item {
+.address__item {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.adress__item:last-child {
+.address__item:last-child {
   margin-bottom: 0;
 }
 
-.adress__map {
+.address__map {
   color: var(--main-txt-mode-dark);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adress__map:hover, .adress__map:focus {
+.address__map:hover, .address__map:focus {
   color: var(--secondary-txt-mode-dark);
 }
 
@@ -1255,11 +1254,6 @@ img {
   transition: transform var(--cubic-bezier);
 }
 
-.project__link:hover .project__overlay,
-.project__link:focus .project__overlay {
-  transform: translateY(0);
-}
-
 .project__img {
   display: block;
 }
@@ -1315,6 +1309,11 @@ img {
   .project__details {
     flex-grow: 1;
   }
+}
+
+.project__link:hover .project__overlay,
+.project__link:focus .project__overlay {
+  transform: translateY(0);
 }
 
 .project__name {
@@ -1464,7 +1463,7 @@ img {
   height: 40px;
   padding: 12px 42px;
   border-radius: 4px;
-  transition: border-colorvar(--cubic-bezier);
+  transition: border-color var(--cubic-bezier);
 }
 
 .form__input:focus {

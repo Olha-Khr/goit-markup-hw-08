@@ -38,7 +38,7 @@
   height: 40px;
   padding: 12px 42px;
   border-radius: 4px;
-  transition: border-colorvar(--cubic-bezier);
+  transition: border-color var(--cubic-bezier);
   &:focus {
     border-color: var(--bg-icon-hover-color);
   }
