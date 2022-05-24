@@ -85,24 +85,56 @@
 
 .hero__btn {
   display: block;
+  box-shadow: none;
   margin-right: auto;
   margin-left: auto;
   padding-top: 10px;
   padding-left: 32px;
   padding-right: 32px;
+  border: none;
   padding-bottom: 10px;
   font-family: inherit;
   @include font(700, 16px, 1.87, 0.06em);
   align-items: center;
   text-align: center;
   color: var(--main-txt-mode-dark);
-  background-color: var(--button);
+  background-color: var(--button-focus-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  // border-radius: 4px;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   &:hover,
   &:focus {
-    color: var(--main-txt-mode-dark);
-    background-color: var(--button);
+    background: var(--secondary-txt-mode-dark);
   }
 }
+//   font-weight: 700;
+//   line-height: 1.87;
+//   letter-spacing: 0.06em;
+//   padding: 10px 32px;
+//   border: none;
+//   box-shadow: none;
+//   cursor: pointer;
+
+//   font-family: inherit;
+//   // font-weight: 500;
+//   // font-size: 16px;
+//   // line-height: 1.62;
+//   // letter-spacing: 0.03em;
+//   text-align: center;
+
+//   border-radius: 4px;
+//   // padding: 6px 22px;
+
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   background-color: var(--button);
+//   color: var(--main-txt-mode-dark);
+
+//   &:hover {
+//     // &:focus {
+//     background-color: var(--button);
+//   }
+// }
